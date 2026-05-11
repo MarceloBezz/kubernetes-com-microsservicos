@@ -68,7 +68,6 @@ spec:
             secretKeyRef:
               name: senhas
               key: DB_PASSWORD
-        
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -131,9 +130,9 @@ spec:
     spec:
       containers:
       - name: server
-        image: marcelobezz07/java-server-k8s:v1
+        image: marcelobezz07/java-server-k8s:v2
         ports:
-        - containerPort: 80
+        - containerPort: 8081
         env:
         - name: SERVER_HOST
           valueFrom:  
