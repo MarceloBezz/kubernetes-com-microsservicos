@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: gateway
-        image: marcelobezz07/java-gateway-k8s:v2
+        image: marcelobezz07/java-gateway-k8s:v3
         ports:
         - containerPort: 80
         env:
@@ -44,7 +44,7 @@ spec:
     spec:
       containers:
       - name: pagamentos
-        image: marcelobezz07/java-pagamentos-k8s:v2
+        image: marcelobezz07/java-pagamentos-k8s:v3
         ports:
         - containerPort: 80
         env:
@@ -87,7 +87,7 @@ spec:
     spec:
       containers:
       - name: pedidos
-        image: marcelobezz07/java-pedidos-k8s:v2
+        image: marcelobezz07/java-pedidos-k8s:v3
         ports:
         - containerPort: 80
         env:
